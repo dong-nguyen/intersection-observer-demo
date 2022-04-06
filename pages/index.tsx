@@ -1,17 +1,14 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="w-[900px] m-auto max-w-full">
       <div className="mb-20">
         <h1 className="font-bold text-4xl mb-5">What?</h1>
         <h2 className="mb-4">
           The Intersection Observer API provides a way to asynchronously observe
           changes in the intersection of a target element with an ancestor
-          element or with a top-level document's viewport.
+          element or with a top-level document&apos;s viewport.
         </h2>
       </div>
       <div className="mb-20">
@@ -26,7 +23,7 @@ const Home: NextPage = () => {
           <li>
             Lazy-loading of images or other content as a page is scrolled.
           </li>
-          <li>Implementing "Infinite scrolling".</li>
+          <li>Implementing &quot;Infinite scrolling&quot;.</li>
           <li>
             Deciding whether or not to perform tasks or animation processes
             based on whether or not the user will see the result.
@@ -37,6 +34,53 @@ const Home: NextPage = () => {
         <h1 className="font-bold text-4xl mb-5">How?</h1>
         <img src="code_example1.png" className="w-[600px] max-w-full" />
         <img src="code_example2.png" className="w-[600px] max-w-full" />
+        <div className="mt-10">
+          <dl>
+            <dt className="mb-4">
+              <code className="bg-slate-100">root</code>
+            </dt>
+            <dd className="mb-10">
+              <p>
+                The element that is used as the viewport for checking visibility
+                of the target. Must be the ancestor of the target. Defaults to
+                the browser viewport if not specified or if <code>null</code>.
+              </p>
+            </dd>
+            <dt className="mb-4">
+              <code className="bg-slate-100">rootMargin</code>
+            </dt>
+            <dd className="mb-10">
+              <p>
+                Margin around the root. Can have values similar to the CSS{' '}
+                <a href="/en-US/docs/Web/CSS/margin">
+                  <code>margin</code>
+                </a>{' '}
+                property, e.g. &quot;<code>10px 20px 30px 40px&quot;</code>{' '}
+                (top, right, bottom, left). The values can be percentages. This
+                set of values serves to grow or shrink each side of the root
+                element&apos;s bounding box before computing intersections.
+                Defaults to all zeros.
+              </p>
+            </dd>
+            <dt className="mb-4">
+              <code className="bg-slate-100">threshold</code>
+            </dt>
+            <dd className="mb-10">
+              <p>
+                Either a single number or an array of numbers which indicate at
+                what percentage of the target&apos;s visibility the
+                observer&apos;s callback should be executed. If you only want to
+                detect when visibility passes the 50% mark, you can use a value
+                of 0.5. If you want the callback to run every time visibility
+                passes another 25%, you would specify the array [0, 0.25, 0.5,
+                0.75, 1]. The default is 0 (meaning as soon as even one pixel is
+                visible, the callback will be run). A value of 1.0 means that
+                the threshold isn&apos;t considered passed until every pixel is
+                visible.
+              </p>
+            </dd>
+          </dl>
+        </div>
       </div>
       <div className="mb-20">
         <h1 className="font-bold text-4xl mb-5">Resources</h1>
