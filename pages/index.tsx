@@ -83,6 +83,21 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className="mb-20">
+        <h1 className="font-bold text-4xl mb-5">Notes</h1>
+        <div>
+          <ul className="list-disc italic pl-10">
+            <li>
+              Intersection Observer API is a new API so please add polyfill to
+              make sure the app doesn&apos;t crash
+            </li>
+            <li>
+              There are some the other cool APIs of observer pattern you can
+              try: ResizeObserver, MutationObserver
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-20">
         <h1 className="font-bold text-4xl mb-5">Resources</h1>
         <div className="mb-3">
           <a
@@ -94,7 +109,7 @@ const Home: NextPage = () => {
             Intersection Observer API
           </a>
         </div>
-        <div>
+        <div className="mb-3">
           <a
             href="https://medium.com/walmartglobaltech/infinite-scrolling-the-right-way-11b098a08815"
             target="_blank"
@@ -102,6 +117,36 @@ const Home: NextPage = () => {
             className="text-cyan-600 font-bold font-2xl"
           >
             Infinite Scroll’ing the right way
+          </a>
+        </div>
+        <div className="mb-3">
+          <a
+            href="https://github.com/w3c/IntersectionObserver/tree/main/polyfill"
+            target="_blank"
+            rel="noreferrer"
+            className="text-cyan-600 font-bold font-2xl"
+          >
+            IntersectionObserver polyfill
+          </a>
+        </div>
+        <div className="mb-3">
+          <a
+            href="https://www.dofactory.com/javascript/design-patterns/observer"
+            target="_blank"
+            rel="noreferrer"
+            className="text-cyan-600 font-bold font-2xl"
+          >
+            JavaScript Observer
+          </a>
+        </div>
+        <div className="mb-3">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver"
+            target="_blank"
+            rel="noreferrer"
+            className="text-cyan-600 font-bold font-2xl"
+          >
+            ResizeObserver
           </a>
         </div>
       </div>

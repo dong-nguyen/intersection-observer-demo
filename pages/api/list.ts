@@ -10,7 +10,6 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   const { last } = req.body;
-  console.log('🚀 ~ file: list.ts ~ line 13 ~ req.body', req.body);
   const lastValue = last || 0;
   const list = Array.from(Array(Number(20)).keys()).map(
     (_, index) => index + lastValue + 1
