@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Header smallHeading={!isVisible} />
       <main className="p-4 pt-20 min-h-screen relative">
-        <div className="w-full h-[90px]" ref={sentinelRef}></div>
+        <div className="w-full h-[90px] bg-slate-400 mb-2" ref={sentinelRef}></div>
         <div>
           <Component {...pageProps} />
         </div>

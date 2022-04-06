@@ -36,7 +36,7 @@ const Home: NextPage = () => {
         <img src="code_example2.png" className="w-[600px] max-w-full" />
         <div className="mt-10">
           <dl>
-            <dt className="mb-4">
+            <dt className="mb-4" key="1">
               <code className="bg-slate-100">root</code>
             </dt>
             <dd className="mb-10">
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
                 the browser viewport if not specified or if <code>null</code>.
               </p>
             </dd>
-            <dt className="mb-4">
+            <dt className="mb-4" key="2">
               <code className="bg-slate-100">rootMargin</code>
             </dt>
             <dd className="mb-10">
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
                 Defaults to all zeros.
               </p>
             </dd>
-            <dt className="mb-4">
+            <dt className="mb-4" key="3">
               <code className="bg-slate-100">threshold</code>
             </dt>
             <dd className="mb-10">
